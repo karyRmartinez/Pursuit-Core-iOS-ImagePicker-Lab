@@ -23,6 +23,19 @@ class ImageViewController: UIViewController {
     }
     @IBOutlet weak var iteam: UIToolbar!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+       
+    }
+    @IBAction func cameraButtonPressed(_ sender: UIBarButtonItem) {
+        let imagePickerViewController = UIImagePickerController()
+        imagePickerViewController.delegate = self
+        imagePickerViewController.sourceType = .photoLibrary
+        
+        present(imagePickerViewController, animated: true, completion: nil)
+        
+    }
+    
     @IBAction func addImageWhenPressed(_ sender: Any) {
         let imagePickerViewController = UIImagePickerController()
         imagePickerViewController.delegate = self
@@ -41,10 +54,6 @@ class ImageViewController: UIViewController {
                 self.present(imagePickerViewController, animated: true, completion: nil)
             }))
         }
-    }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
 

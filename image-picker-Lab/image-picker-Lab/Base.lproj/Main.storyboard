@@ -40,12 +40,16 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="vIs-3Y-2ts"/>
-                                    <barButtonItem title="Item" id="mpv-vI-ml6">
+                                    <barButtonItem title="Item" width="296" id="EFc-6S-mY7">
                                         <connections>
-                                            <action selector="addImageWhenPressed:" destination="BYZ-38-t0r" id="CPb-eD-jYJ"/>
+                                            <action selector="addImageWhenPressed:" destination="BYZ-38-t0r" id="gxt-Ba-HiC"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="2uM-jn-YLZ"/>
+                                    <barButtonItem systemItem="camera" id="mpv-vI-ml6">
+                                        <connections>
+                                            <action selector="cameraButtonPressed:" destination="BYZ-38-t0r" id="s8z-hW-A8z"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
@@ -71,7 +75,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-162" y="156"/>
+            <point key="canvasLocation" x="-1022" y="159"/>
         </scene>
     </scenes>
 </document>
