@@ -13,6 +13,7 @@
 		6BDAA1F72343D1B1000DCEE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BDAA1F62343D1B1000DCEE6 /* Assets.xcassets */; };
 		6BDAA1FA2343D1B1000DCEE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BDAA1F82343D1B1000DCEE6 /* LaunchScreen.storyboard */; };
 		6BDAA2052343D1B1000DCEE6 /* image_picker_LabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDAA2042343D1B1000DCEE6 /* image_picker_LabTests.swift */; };
+		6BDAA2102343FF3B000DCEE6 /* LoginUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDAA20F2343FF3B000DCEE6 /* LoginUserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		6BDAA2002343D1B1000DCEE6 /* image-picker-LabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "image-picker-LabTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BDAA2042343D1B1000DCEE6 /* image_picker_LabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = image_picker_LabTests.swift; sourceTree = "<group>"; };
 		6BDAA2062343D1B1000DCEE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BDAA20F2343FF3B000DCEE6 /* LoginUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				6BDAA1EF2343D1AF000DCEE6 /* AppDelegate.swift */,
 				6BDAA1F12343D1AF000DCEE6 /* ImageViewController.swift */,
+				6BDAA20F2343FF3B000DCEE6 /* LoginUserViewController.swift */,
 				6BDAA1F32343D1AF000DCEE6 /* Main.storyboard */,
 				6BDAA1F62343D1B1000DCEE6 /* Assets.xcassets */,
 				6BDAA1F82343D1B1000DCEE6 /* LaunchScreen.storyboard */,
@@ -198,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BDAA1F22343D1AF000DCEE6 /* ImageViewController.swift in Sources */,
+				6BDAA2102343FF3B000DCEE6 /* LoginUserViewController.swift in Sources */,
 				6BDAA1F02343D1AF000DCEE6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

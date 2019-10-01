@@ -10,23 +10,27 @@ import UIKit
 
 class ImageViewController: UIViewController {
 
+    @IBOutlet weak var textField: UITextField!
     
     var photoLibraryAccess = false
     
+    @IBOutlet weak var welcomeLabel: UILabel!
     
-    @IBOutlet weak var userName: UIImageView!
+    @IBOutlet weak var profilePicture: UIImageView!
     
     var image = UIImage() {
         didSet {
-            userName.image = image
+            profilePicture.image = image
         }
     }
-    @IBOutlet weak var iteam: UIToolbar!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        textField.delegate = self
        
     }
+  
+    
     @IBAction func cameraButtonPressed(_ sender: UIBarButtonItem) {
         let imagePickerViewController = UIImagePickerController()
         imagePickerViewController.delegate = self
@@ -55,8 +59,6 @@ class ImageViewController: UIViewController {
             }))
         }
     }
-
-
 }
 extension ImageViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -69,3 +71,14 @@ extension ImageViewController: UIImagePickerControllerDelegate, UINavigationCont
     }
 }
 
+
+extension ImageViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if let userName = textField.text {
+        welcomeLabel.text = "Welcome, \(userName)"
+        } else {
+            welcomeLabel.text = "Welcome"
+        }
+        return true
+    }
+}
